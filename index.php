@@ -1,4 +1,3 @@
 <?php
 
-//phpinfo();
-echo date('c');
+phpinfo();
