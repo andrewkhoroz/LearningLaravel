@@ -4,12 +4,10 @@ namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
-class Kernel extends HttpKernel
-{
+class Kernel extends HttpKernel {
+
     /**
      * The application's global HTTP middleware stack.
-     *
-     * These middleware are run during every request to your application.
      *
      * @var array
      */
@@ -30,7 +28,6 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
         ],
-
         'api' => [
             'throttle:60,1',
         ],
@@ -38,8 +35,6 @@ class Kernel extends HttpKernel
 
     /**
      * The application's route middleware.
-     *
-     * These middleware may be assigned to groups or used individually.
      *
      * @var array
      */
@@ -49,4 +44,5 @@ class Kernel extends HttpKernel
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
+
 }
