@@ -12,6 +12,9 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-10 col-md-offset-1">
+            <a href="/tasks">List of current tasks</a>
+        </div>
     </div>
 </div>
 @endsection
